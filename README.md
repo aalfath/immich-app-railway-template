@@ -4,16 +4,16 @@
 
 Railway template for [Immich](https://immich.app), the self-hosted photo and video backup app. Template: https://railway.com/deploy/immich-2 · Repo: https://github.com/aalfath/immich-app-railway-template
 
-It deploys **Immich v3.4.1** as four services:
+It deploys **Immich v3.4.2** as four services:
 
 | Service | Source | Network | Volume |
 | --- | --- | --- | --- |
-| `Immich` | this repo, `server/` (`ghcr.io/immich-app/immich-server:v3.4.1`, pinned by digest) | public, port 2283, health check `/api/server/ping` | `/data` (photos, videos, thumbnails) |
-| `Immich ML` | this repo, `machine-learning/` (`ghcr.io/immich-app/immich-machine-learning:v3.4.1`, pinned by digest) | private, port 3003, health check `/ping` | `/cache` (models) |
+| `Immich` | this repo, `server/` (`ghcr.io/immich-app/immich-server:v3.4.2`, pinned by digest) | public, port 2283, health check `/api/server/ping` | `/data` (photos, videos, thumbnails) |
+| `Immich ML` | this repo, `machine-learning/` (`ghcr.io/immich-app/immich-machine-learning:v3.4.2`, pinned by digest) | private, port 3003, health check `/ping` | `/cache` (models) |
 | `Postgres` | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` (pinned by digest) | private, port 5432 | `/var/lib/postgresql/data` |
 | `Redis` | `valkey/valkey:9` (pinned by digest) | private, port 6379 | `/data` |
 
-The images and digests are the ones in Immich's own `docker-compose.yml` for v3.4.1.
+The images and digests are the ones in Immich's own `docker-compose.yml` for v3.4.2.
 
 ## Variables
 
