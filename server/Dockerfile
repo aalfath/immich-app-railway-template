@@ -1,6 +1,6 @@
 # Immich server (API + web UI + background workers) for Railway.
 # Pinned by version and digest. Bump both together and add a CHANGELOG entry.
-FROM ghcr.io/immich-app/immich-server:v3.4.1@sha256:7c489add298fc2f92cda4c777de6462aa206877e04087b815f62c7664af0b53b
+FROM ghcr.io/immich-app/immich-server:v3.4.2@sha256:fc880c1bf665b4aab1e74c15e56ab871225989cd546536e6b77e771869af06bd
 
 # Fixed settings. Railway service variables override these.
 ENV IMMICH_ENV=production \
